@@ -1,0 +1,44 @@
+=== unit berjalan (potongan) ===
+accounts-daemon.service running
+avahi-daemon.service running
+bluetooth.service running
+colord.service running
+cron.service running
+cups-browsed.service running
+cups.service running
+dbus.service running
+fwupd.service running
+geoclue.service running
+getty@tty1.service running
+irqbalance.service running
+kerneloops.service running
+lightdm.service running
+=== proses induk layanan ===
+      1       0 systemd
+    389       1 systemd-journal
+    431       1 systemd-udevd
+   1026       1 systemd-resolve
+   1027       1 systemd-timesyn
+   1035       1 avahi-daemon
+   1037       1 cron
+   1038       1 dbus-daemon
+=== jumlah proses ===
+479
+=== port mendengarkan ===
+State  Recv-Q Send-Q               Local Address:Port  Peer Address:PortProcess                                  
+LISTEN 0      100                      127.0.0.1:1883       0.0.0.0:*    users:(("amqtt",pid=115734,fd=6))       
+LISTEN 0      5                        127.0.0.1:8787       0.0.0.0:*    users:(("python",pid=1474,fd=3))        
+LISTEN 0      4096                     127.0.0.1:631        0.0.0.0:*                                            
+LISTEN 0      511                        0.0.0.0:6768       0.0.0.0:*    users:(("orca-ide",pid=17066,fd=124))   
+LISTEN 0      4096                 127.0.0.53%lo:53         0.0.0.0:*                                            
+LISTEN 0      4096                    127.0.0.54:53         0.0.0.0:*                                            
+LISTEN 0      4096                  100.92.162.2:45441      0.0.0.0:*                                            
+=== cgroup hierarki ===
+cgroup.controllers
+cgroup.max.depth
+cgroup.max.descendants
+cgroup.pressure
+cgroup.procs
+cgroup.stat
+=== kontrol cgroup yang tersedia ===
+cpuset cpu io memory hugetlb pids rdma misc dmem

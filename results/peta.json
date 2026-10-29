@@ -1,0 +1,63 @@
+{
+  "identitas": {
+    "hostname": "INFINIX-ElementaryOS",
+    "kernel": "7.0.0-34-generic",
+    "arsitektur": "x86_64",
+    "distro": "elementary OS 8",
+    "id_distro": "elementary",
+    "python": "3.12.3"
+  },
+  "memori_kb": {
+    "MemTotal": 15582076,
+    "MemAvailable": 6686784,
+    "MemFree": 688332,
+    "Buffers": 1554668,
+    "Cached": 3703792,
+    "SwapTotal": 4001276
+  },
+  "cpu_logis": 16,
+  "disk_gib": {
+    "total": 464.4,
+    "terpakai": 150.4
+  },
+  "beban": {
+    "jumlah_node": 12,
+    "jeda_detik": 5,
+    "baris_per_node": 17280,
+    "total_baris": 207360,
+    "data_kib": 32400.0,
+    "data_mib": 31.640625
+  },
+  "komponen": [
+    {
+      "perangkat": "Mikrokontroler sensor (ESP32)",
+      "so": "FreeRTOS",
+      "jenis": "Embedded/RTOS",
+      "fungsi": "Penjadwalan deterministik, RAM ratusan KB, tanpa MMU"
+    },
+    {
+      "perangkat": "Gateway kebun (Raspberry Pi)",
+      "so": "Raspberry Pi OS Lite",
+      "jenis": "Server",
+      "fungsi": "Headless, meneruskan data sensor, buffer lokal"
+    },
+    {
+      "perangkat": "Server cloud pertanian",
+      "so": "Ubuntu Server LTS",
+      "jenis": "Server",
+      "fungsi": "Agregasi multi-gateway, basis data, TLS"
+    },
+    {
+      "perangkat": "Ponsel pemantau petani",
+      "so": "Android",
+      "jenis": "Mobile",
+      "fungsi": "Sandbox UID, notifikasi, kontrol pompa"
+    },
+    {
+      "perangkat": "Komputer operator (mesin ini)",
+      "so": "elementary OS (Linux)",
+      "jenis": "Desktop",
+      "fungsi": "Alat ukur dan dasbor operator"
+    }
+  ]
+}

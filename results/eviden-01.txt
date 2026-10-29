@@ -1,0 +1,36 @@
+=== hostname ===
+INFINIX-ElementaryOS
+=== uname -srm ===
+Linux 7.0.0-34-generic x86_64
+=== os-release ===
+PRETTY_NAME="elementary OS 8"
+NAME="elementary OS"
+VERSION_ID="8"
+ID=elementary
+=== kernel build ===
+#34~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 15:38:29 UTC 2
+=== lscpu ===
+Architecture:                            x86_64
+CPU(s):                                  16
+Model name:                              AMD Ryzen 7 7735HS with Radeon Graphics
+Thread(s) per core:                      2
+Core(s) per socket:                      8
+Socket(s):                               1
+CPU(s) scaling MHz:                      73%
+BogoMIPS:                                6387.76
+=== meminfo ===
+MemTotal:       15582076 kB
+MemFree:          568460 kB
+MemAvailable:    6575868 kB
+Buffers:         1553456 kB
+Cached:          3718436 kB
+SwapTotal:       4001276 kB
+=== uptime ===
+ 17:20:49 up  4:09,  1 user,  load average: 1.39, 1.58, 1.40
+=== df ===
+Filesystem            Type  Size  Used Avail Use% Mounted on
+/dev/mapper/data-root ext4  465G  151G  291G  35% /
+/dev/mapper/data-root ext4  465G  151G  291G  35% /
+=== init ===
+      1 systemd
+systemd 255 (255.4-1ubuntu8.17)

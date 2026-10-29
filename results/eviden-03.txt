@@ -1,0 +1,30 @@
+=== PEMETAAN EKOSISTEM SO SMART FARMING ===
+Mesin pengukuran : INFINIX-ElementaryOS
+Distro           : elementary OS 8
+Kernel           : 7.0.0-34-generic (x86_64)
+Python           : 3.12.3
+
+Perangkat                          Sistem operasi           Jenis           Fungsi utama
+----------------------------------------------------------------------------------------------------------------------
+Mikrokontroler sensor (ESP32)      FreeRTOS                 Embedded/RTOS   Penjadwalan deterministik, RAM ratusan KB, tanpa MMU
+Gateway kebun (Raspberry Pi)       Raspberry Pi OS Lite     Server          Headless, meneruskan data sensor, buffer lokal
+Server cloud pertanian             Ubuntu Server LTS        Server          Agregasi multi-gateway, basis data, TLS
+Ponsel pemantau petani             Android                  Mobile          Sandbox UID, notifikasi, kontrol pompa
+Komputer operator (mesin ini)      elementary OS (Linux)    Desktop         Alat ukur dan dasbor operator
+
+=== PENGUKURAN SUMBER DAYA (data nyata) ===
+MemTotal         : 15582076 kB (15216.9 MiB)
+MemAvailable     : 6607884 kB (6453.0 MiB)
+Terpakai         : 8763.9 MiB (57.59% dari total)
+SwapTotal        : 4001276 kB
+CPU logis        : 16
+Penyimpanan /    : 151 GiB terpakai dari 464 GiB
+
+=== PERKIRAAN BEBAN 12 NODE SENSOR ===
+Jeda pembacaan   : 5 detik
+Baris per node   : 17280 baris/hari
+Total baris/hari : 207360 baris/hari
+Volume data/hari : 31.64 MiB/hari
+Volume 30 hari   : 949.2 MiB
+
+tersimpan: results/peta.json
