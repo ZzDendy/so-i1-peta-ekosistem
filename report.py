@@ -390,7 +390,8 @@ def kepingan(d):
         ("Isi kepingan", "Tabel klasifikasi jenis dan fungsi sistem operasi pada lima simpul "
                          "ekosistem, peta ekosistem beserta arah aliran data, dan hasil ukur "
                          "sumber daya mesin operator"),
-        ("Lokasi di portofolio", "[tautan repositori I-1]"),
+        ("Lokasi di portofolio",
+         "https://github.com/ZzDendy/so-i1-peta-ekosistem"),
         ("Dipakai untuk", "Level 1 Puzzle UTS — menjadi dasar kepingan #2 (system call) dan #3 "
                           "(proses dan thread), karena pembagian peran antar-simpul di sini "
                           "menentukan jenis pemanggilan sistem dan model proses yang diamati "
